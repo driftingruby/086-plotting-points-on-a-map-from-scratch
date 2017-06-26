@@ -1,0 +1,7 @@
+<h1><%= store.name %></h1>
+<h2>Hours of Operation</h2>
+<ul>
+  <% store.operation_hours.each do |operation_hour| %>
+    <li><strong><%= operation_hour.day.titleize %></strong> - <%= operation_hour.hours %></li>
+  <% end %>
+</ul>

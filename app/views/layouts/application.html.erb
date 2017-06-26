@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= tag :meta, name: 'google_maps', content: 'YOURAPIKEY' %>
+  </head>
+
+  <body>
+    <div class='container'>
+      <%= link_to 'Home', root_path, class: 'btn btn-secondary' %>
+      <%= link_to 'Maps', map_stores_path, class: 'btn btn-secondary' %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

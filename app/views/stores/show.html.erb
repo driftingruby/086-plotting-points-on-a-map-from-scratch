@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @store.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>  <%= @store.latitude %>, <%= @store.longitude %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <% @store.operation_hours.each do |day| %>
+    <li><%= day.day.titleize %> - <%= day.hours %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>

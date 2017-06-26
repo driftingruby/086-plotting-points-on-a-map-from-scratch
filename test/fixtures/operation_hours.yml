@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: operation_hours
+#
+#  id           :integer          not null, primary key
+#  store_id     :integer
+#  day          :integer          default("sunday")
+#  open_time    :time
+#  closing_time :time
+#  closed       :boolean          default(FALSE)
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store_id: 1
+  day: 1
+  open_time: 2017-06-24 22:11:47
+  closing_time: 2017-06-24 22:11:47
+
+two:
+  store_id: 1
+  day: 1
+  open_time: 2017-06-24 22:11:47
+  closing_time: 2017-06-24 22:11:47
