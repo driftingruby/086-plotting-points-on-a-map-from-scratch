@@ -20,4 +20,4 @@
         infowindow.setOptions
           content: data.content
           maxWidth: 300
-        infowindow.open map, marker
+        infowindow.open map, this
